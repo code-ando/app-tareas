@@ -1,12 +1,13 @@
-import { useState } from 'react'
+
 
 import './App.css'
 import imagen from './imagen/logo1.jpg'
-import Tarea from './component/Tarea'
-import TareaFormulario from './component/TareaFormulario'
+
+
+import ListaDeTareas from './component/ListaDeTareas'
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <div className="aplicacion-de-tareas">
@@ -20,8 +21,7 @@ function App() {
         </div>
         <div className='lista-principal'>
           <h1>Mis tareas</h1>
-            
-            <TareaFormulario/>
+            <ListaDeTareas/>
         </div>
       
     </div>
